@@ -1,0 +1,56 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+h1,
+h2,
+p {
+    color: white;
+    background: linear-gradient(white, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
+    margin: 15px auto;
+}
+
+.stars-background {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    top: 110%;
+}
+
+.star.-small {
+    width: 2px;
+    height: 2px;
+}
+
+.star.-big {
+    width: 5px;
+    height: 5px;
+}
